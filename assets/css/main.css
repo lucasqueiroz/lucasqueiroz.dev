@@ -42,6 +42,7 @@ body.dark {
 .background-overlay.dark {
     background: linear-gradient(var(--background-overlay-color-dark), var(--background-overlay-color-dark)),
         url("../images/background.png");
+    background-position: center;
 }
 
 .landing {
