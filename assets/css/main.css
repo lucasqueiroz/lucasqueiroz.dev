@@ -1,0 +1,79 @@
+:root {
+    --neutral-3: rgb(245, 245, 245);
+    --neutral-5: rgb(217, 217, 217);
+    --neutral-6-80: rgba(191, 191, 191, 0.8);
+    --neutral-9: rgb(38, 38, 38);
+
+    --background-color: var(--neutral-3);
+    
+    --background-overlay-color: var(--neutral-6-80);
+
+    --icons-background-color: var(--neutral-9);
+    --icons-color: var(--neutral-3);
+    --icons-color-hover: var(--neutral-5);
+}
+
+body {
+    margin: 0;
+    background-color: var(--background-color);
+}
+
+.background-overlay {
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    position: fixed;
+    background: linear-gradient(var(--background-overlay-color), var(--background-overlay-color)),
+        url("../images/background.png");
+    background-position: center;
+}
+
+.landing {
+    min-height: 100%;
+    min-width: 100%;
+}
+
+.landing .logo-img {
+    width: 645px;
+    height: 235px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+}
+
+.landing .icon-box {
+    bottom: 130px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--icons-background-color);
+    position: absolute;
+    border-radius: 30px;
+    
+}
+
+.landing .icons {
+    color: var(--icons-color);
+    font-size: 22px;
+    padding: 5px 20px;
+}
+
+.landing .icons a {
+    padding-left: 20px;
+    color: var(--icons-color);
+}
+
+.landing .icons a:first-child {
+    padding-left: 0px;
+}
+
+.landing .icons a:hover {
+    color: var(--icons-color-hover);
+}
+
+@media only screen and (max-width: 640px) {
+    .landing .logo-img {
+        width: 270px;
+        height: 100px;
+    }
+}
