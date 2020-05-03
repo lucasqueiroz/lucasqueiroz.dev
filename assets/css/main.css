@@ -2,20 +2,31 @@
     --neutral-3: rgb(245, 245, 245);
     --neutral-5: rgb(217, 217, 217);
     --neutral-6-80: rgba(191, 191, 191, 0.8);
+    --neutral-8: rgb(89, 89, 89);
+    --neutral-8-80: rgba(89, 89, 89, 0.8);
     --neutral-9: rgb(38, 38, 38);
 
     --background-color: var(--neutral-3);
+    --background-color-dark: var(--neutral-9);
     
     --background-overlay-color: var(--neutral-6-80);
+    --background-overlay-color-dark: var(--neutral-8-80);
 
     --icons-background-color: var(--neutral-9);
+    --icons-background-color-dark: var(--neutral-3);
     --icons-color: var(--neutral-3);
+    --icons-color-dark: var(--neutral-9);
     --icons-color-hover: var(--neutral-5);
+    --icons-color-hover-dark: var(--neutral-8);
 }
 
 body {
     margin: 0;
     background-color: var(--background-color);
+}
+
+body.dark {
+    background-color: var(--background-color-dark);
 }
 
 .background-overlay {
@@ -26,6 +37,11 @@ body {
     background: linear-gradient(var(--background-overlay-color), var(--background-overlay-color)),
         url("../images/background.png");
     background-position: center;
+}
+
+.background-overlay.dark {
+    background: linear-gradient(var(--background-overlay-color-dark), var(--background-overlay-color-dark)),
+        url("../images/background.png");
 }
 
 .landing {
@@ -52,8 +68,11 @@ body {
     
 }
 
+.landing .icon-box.dark {
+    background-color: var(--icons-background-color-dark);
+}
+
 .landing .icons {
-    color: var(--icons-color);
     font-size: 22px;
     padding: 5px 20px;
 }
@@ -61,6 +80,10 @@ body {
 .landing .icons a {
     padding-left: 20px;
     color: var(--icons-color);
+}
+
+.landing .icons a.dark {
+    color: var(--icons-color-dark);
 }
 
 .landing .icons a:first-child {
@@ -71,9 +94,23 @@ body {
     color: var(--icons-color-hover);
 }
 
+.landing .icons a.dark:hover {
+    color: var(--icons-color-hover-dark);
+}
+
+.dark-mode {
+    display: none;
+}
+
 @media only screen and (max-width: 640px) {
     .landing .logo-img {
-        width: 270px;
-        height: 100px;
+        width: 258px;
+        height: 94px;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    .dark-mode::after {
+        content: "true";
     }
 }
