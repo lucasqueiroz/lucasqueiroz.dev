@@ -1,0 +1,30 @@
+@neutral-3: rgb(245, 245, 245);
+@neutral-5: rgb(217, 217, 217);
+@neutral-6-80: rgba(191, 191, 191, 0.8);
+@neutral-8: rgb(89, 89, 89);
+@neutral-8-80: rgba(89, 89, 89, 0.8);
+@neutral-9: rgb(38, 38, 38);
+
+.light-mode {
+  @color: @neutral-9;
+  @color-hover: @neutral-8;
+
+  @background: @neutral-3;
+  @background-overlay: @neutral-6-80;
+
+  @negative-color: @neutral-3;
+  @negative-color-hover: @neutral-5;
+  @negative-background: @neutral-9;
+}
+
+.dark-mode {
+  @color: @neutral-3;
+  @color-hover: @neutral-5;
+
+  @background: @neutral-9;
+  @background-overlay: @neutral-8-80;
+
+  @negative-color: @neutral-9;
+  @negative-color-hover: @neutral-8;
+  @negative-background: @neutral-3;
+}
