@@ -1,0 +1,114 @@
+@import "colors";
+@import "fonts";
+
+.menu {
+  .open,
+  .close {
+    display: block;
+    top: 50px;
+    right: 50px;
+    position: absolute;
+    color: @color;
+
+    &:hover {
+      cursor: pointer;
+      color: @color-hover;
+    }
+  }
+
+  .links {
+    background-color: @background;
+    width: 300px;
+    height: 100%;
+    top: 0;
+    right: 0;
+    position: absolute;
+    z-index: 2;
+    text-align: center;
+
+    ul {
+      margin-top: 122px;
+      width: 100%;
+      padding-left: 0;
+      list-style-type: none;
+
+      li {
+        height: 70px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &.active {
+          background-color: @negative-background;
+
+          a {
+            color: @negative-color;
+
+            &:hover {
+              color: @negative-color-hover;
+            }
+          }
+        }
+
+        a {
+          color: @color;
+          vertical-align: center;
+
+          &:hover {
+            color: @color-hover;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .menu {
+    .links {
+      width: 100%;
+    }
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .menu {
+    .open,
+    .close {
+      color: @color-dark;
+
+      &:hover {
+        color: @color-hover-dark;
+      }
+    }
+
+    .links {
+      background-color: @background-dark;
+
+      ul {
+        li {
+          &.active {
+            background-color: @negative-background-dark;
+
+            a {
+              color: @negative-color-dark;
+
+              &:hover {
+                color: @negative-color-hover-dark;
+              }
+            }
+          }
+
+          a {
+            color: @color-dark;
+
+            &:hover {
+              color: @color-hover-dark;
+            }
+          }
+        }
+      }
+    }
+  }
+}

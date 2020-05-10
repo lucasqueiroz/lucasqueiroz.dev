@@ -15,7 +15,7 @@ body {
   z-index: -1;
   position: fixed;
   background: linear-gradient(@background-overlay, @background-overlay),
-    url("../images/background.png") center;
+    url("/assets/images/background.png") center;
 }
 
 .content {
@@ -39,16 +39,20 @@ a {
   text-decoration: none;
 }
 
+.hidden {
+  display: none;
+}
+
 .negative {
   background-color: @negative-background;
   color: @negative-color;
 
   a {
     color: @negative-color;
-  }
 
-  a:hover {
-    color: @negative-color-hover;
+    &:hover {
+      color: @negative-color-hover;
+    }
   }
 }
 
@@ -60,7 +64,7 @@ a {
 
   .background-overlay {
     background: linear-gradient(@background-overlay-dark, @background-overlay-dark),
-    url("../images/background.png") center;
+    url("/assets/images/background.png") center;
   }
 
   .negative {
@@ -69,10 +73,10 @@ a {
 
     a {
       color: @negative-color-dark;
-    }
 
-    a:hover {
-      color: @negative-color-hover-dark;
+      &:hover {
+        color: @negative-color-hover-dark;
+      }
     }
   }
 }
