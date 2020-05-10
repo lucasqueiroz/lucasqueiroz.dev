@@ -34,9 +34,7 @@ body.dark {
     width: 100%;
     z-index: -1;
     position: fixed;
-    background: linear-gradient(var(--background-overlay-color), var(--background-overlay-color)),
-        url("../images/background.png");
-    background-position: center;
+    background: linear-gradient(var(--background-overlay-color), var(--background-overlay-color)) url("../images/background.png") center;
 }
 
 .background-overlay.dark {

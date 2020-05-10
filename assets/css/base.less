@@ -1,0 +1,78 @@
+@import "colors";
+@import "fonts";
+
+body {
+  margin: 0;
+  background-color: @background;
+  color: @color;
+  font-family: @font-family;
+  font-size: @paragraph;
+}
+
+.background-overlay {
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  position: fixed;
+  background: linear-gradient(@background-overlay, @background-overlay),
+    url("../images/background.png") center;
+}
+
+.content {
+  min-height: 100%;
+  min-width: 100%;
+}
+
+.center-h {
+  left: 50%;
+  transform: translateX(-50%);
+  position: absolute;
+}
+
+.center-v {
+  top: 50%;
+  transform: translateY(-50%);
+  position: absolute;
+}
+
+a {
+  text-decoration: none;
+}
+
+.negative {
+  background-color: @negative-background;
+  color: @negative-color;
+
+  a {
+    color: @negative-color;
+  }
+
+  a:hover {
+    color: @negative-color-hover;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: @background-dark;
+    color: @color-dark;
+  }
+
+  .background-overlay {
+    background: linear-gradient(@background-overlay-dark, @background-overlay-dark),
+    url("../images/background.png") center;
+  }
+
+  .negative {
+    background-color: @negative-background-dark;
+    color: @negative-color-dark;
+
+    a {
+      color: @negative-color-dark;
+    }
+
+    a:hover {
+      color: @negative-color-hover-dark;
+    }
+  }
+}

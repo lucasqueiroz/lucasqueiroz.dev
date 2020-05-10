@@ -1,0 +1,39 @@
+@import "base";
+
+.logo {
+  width: 645px;
+  height: 235px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+}
+
+.icons {
+  bottom: 130px;
+  font-size: @icon;
+  position: absolute;
+  border-radius: 30px;
+  padding: 5px 20px;
+
+  a {
+    padding-left: 20px;
+  }
+
+  a:first-child {
+    padding-left: 0;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .logo {
+    width: 258px;
+    height: 94px;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .logo {
+    content: url("../images/Logo : Light Mode.svg");
+  }
+}
