@@ -10,7 +10,7 @@
         <meta name="description" content="Lucas Queiroz | Backend Developer">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <link rel="stylesheet/less" type="text/css" href="assets/css/landing.less" />
+        <link rel="stylesheet/less" type="text/css" href="assets/css/pages/landing.less" />
         <link rel="stylesheet" href="assets/css/fontawesome.min.css">
 
         <link rel="shortcut icon" href="assets/images/favicon.ico" />
@@ -22,7 +22,23 @@
         <![endif]-->
 
         <div class="background-overlay"></div>
-        
+
+        <div class="menu">
+            <i class="fas fa-bars open" id="open-menu" onclick="toggleMenu()"></i>
+
+            <div class="links" id="menu-content">
+                <i class="fas fa-times close" onclick="toggleMenu()"></i>
+
+                <a href="#" class="active">Home</a>
+                <a href="#">About Me</a>
+                <a href="#">Experiences</a>
+                <a href="#">Education</a>
+                <a href="#">Projects</a>
+                <a href="#">/uses</a>
+                <a href="#">Now</a>
+            </div>
+        </div>
+
         <div class="content">
             <img src="assets/images/Logo : Dark Mode.svg" class="logo center-h center-v"  alt="Lucas Queiroz" />
 
@@ -33,6 +49,7 @@
             </div>
         </div>
 
-        <script src="assets/js/less.min.js" type="text/javascript"></script>
+        <script src="/assets/js/menu.js" type="text/javascript" async></script>
+        <script src="/assets/js/less.min.js" type="text/javascript" async></script>
     </body>
 </html>

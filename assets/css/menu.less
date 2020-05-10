@@ -1,0 +1,46 @@
+@import "colors";
+@import "fonts";
+
+.menu {
+  .open,
+  .close {
+    display: block;
+    top: 50px;
+    right: 50px;
+    position: absolute;
+    color: @color;
+
+    &:hover {
+      cursor: pointer;
+      color: @color-hover;
+    }
+  }
+
+  .links {
+    background-color: @background;
+    width: 300px;
+    height: 100%;
+    top: 0;
+    right: 0;
+    position: absolute;
+    z-index: 2;
+    text-align: center;
+
+    a {
+      width: 100%;
+      height: 70px;
+      color: @color;
+      display: inline-block;
+      padding-top: 50%;
+
+      &:hover {
+        color: @color-hover;
+      }
+
+      &.active {
+        background-color: @negative-background;
+        color: @negative-color;
+      }
+    }
+  }
+}
