@@ -26,20 +26,88 @@
     z-index: 2;
     text-align: center;
 
-    a {
+    ul {
+      margin-top: 122px;
       width: 100%;
-      height: 70px;
-      color: @color;
-      display: inline-block;
-      padding-top: 50%;
+      padding-left: 0;
+      list-style-type: none;
+
+      li {
+        height: 70px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &.active {
+          background-color: @negative-background;
+
+          a {
+            color: @negative-color;
+
+            &:hover {
+              color: @negative-color-hover;
+            }
+          }
+        }
+
+        a {
+          color: @color;
+          vertical-align: center;
+
+          &:hover {
+            color: @color-hover;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .menu {
+    .links {
+      width: 100%;
+    }
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .menu {
+    .open,
+    .close {
+      color: @color-dark;
 
       &:hover {
-        color: @color-hover;
+        color: @color-hover-dark;
       }
+    }
 
-      &.active {
-        background-color: @negative-background;
-        color: @negative-color;
+    .links {
+      background-color: @background-dark;
+
+      ul {
+        li {
+          &.active {
+            background-color: @negative-background-dark;
+
+            a {
+              color: @negative-color-dark;
+
+              &:hover {
+                color: @negative-color-hover-dark;
+              }
+            }
+          }
+
+          a {
+            color: @color-dark;
+
+            &:hover {
+              color: @color-hover-dark;
+            }
+          }
+        }
       }
     }
   }
