@@ -29,12 +29,11 @@
     font-style: italic;
 }
 
-@font-family: "JetBrains Mono", "Arial";
+:root {
+    --font-family: "JetBrains Mono";
 
-@heading-1: 64px;
-@heading-2: 48px;
-@heading-3: 36px;
-
-@paragraph: 24px;
-
-@icon: 22px;
+    --paragraph-size: 18px;
+    --heading-1-size: 28px;
+    --heading-2-size: 20px;
+    --heading-3-size: 14px;
+}

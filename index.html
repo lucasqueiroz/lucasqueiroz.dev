@@ -1,58 +1,127 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
-<!--[if IE 7]>         <html class="lt-ie9 lt-ie8" lang="en"> <![endif]-->
-<!--[if IE 8]>         <html class="lt-ie9" lang="en"> <![endif]-->
-<!--[if gt IE 8]><!--> <html lang="en"> <!--<![endif]-->
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>Lucas Queiroz | Backend Developer</title>
-        <meta name="description" content="Lucas Queiroz | Backend Developer">
+        <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-
-        <link rel="stylesheet/less" type="text/css" href="assets/css/pages/landing.less" />
-        <link rel="stylesheet" href="assets/css/fontawesome.min.css">
-
-        <link rel="shortcut icon" href="assets/images/favicon.ico" />
-        <meta name="theme-color" content="#05E6A0">
+        <link rel="stylesheet" href="assets/css/fonts.css">
+        <link rel="stylesheet" href="assets/css/colors.css">
+        <link rel="stylesheet" href="assets/css/main.css">
     </head>
     <body>
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-
-        <div class="background-overlay"></div>
-
-        <div class="menu">
-            <i class="fas fa-bars open" id="open-menu" onclick="toggleMenu()"></i>
-
-            <div class="links hidden" id="menu-content">
-                <i class="fas fa-times close" onclick="toggleMenu()"></i>
-
-                <ul>
-                    <li class="active"><a href="#">Home</a></li>
-                    <li><a href="#">About Me</a></li>
-                    <li><a href="#">Experiences</a></li>
-                    <li><a href="#">Education</a></li>
-                    <li><a href="#">Projects</a></li>
-                    <li><a href="#">Talks</a></li>
-                    <li><a href="#">Now</a></li>
-                    <li><a href="#">/uses</a></li>
-                </ul>
+        <div id="header">
+            <img src="assets/images/logo.svg" id="logo" />
+            <p id="intro">
+                I'm a backend developer, with experience on building, maintaining and updating
+                RESTful APIs and integrations with third-party systems.<br />
+                The technologies I have worked with include Java, Kotlin, Ruby and Python,
+                using the frameworks Spring Boot, Rails and Flask.<br />
+                I also contribute to some open-source projects, including Faker Ruby and Fuel.
+            </p>
+            <div id="social-media">
+                <a href="https://linkedin.com/in/lucas-queiroz"><img src="assets/images/icons/linkedin.svg"  class="icon" id="linkedin" /></a>
+                <a href="https://github.com/lucasqueiroz"><img src="assets/images/icons/github.svg" class="icon" id="github" /></a>
+                <a href="https://twitter.com/lucascqueiroz97"><img src="assets/images/icons/twitter.svg" class="icon" id="twitter" /></a>
             </div>
         </div>
-
-        <div class="content">
-            <img src="assets/images/Logo : Dark Mode.svg" class="logo center-h center-v"  alt="Lucas Queiroz" />
-
-            <div class="icons center-h negative">
-                <a href="https://linkedin.com/in/lucas-queiroz" target="_blank" class="landing-icon-box-icons-a"><i class="fab fa-linkedin"></i></a>
-                <a href="https://github.com/lucasqueiroz" target="_blank" class="landing-icon-box-icons-a"><i class="fab fa-github"></i></a>
-                <a href="https://twitter.com/lucascqueiroz97" target="_blank" class="landing-icon-box-icons-a"><i class="fab fa-twitter"></i></a>
-            </div>
+        <div id="experiences">
+            <h1>Experiences</h1>
+            <span class="experience" id="creditas">
+                <h2>Software Engineer II</h2>
+                <h3><a href="https://creditas.com.br">Creditas</a> - 09/2019 to Present</h3>
+                <p>
+                    At Creditas, I'm part of the communications team, responsible to develop and
+                    maintain a platform to help other teams reach our customers through phone
+                    calls, e-mails, SMS and WhatsApp messages.<br />
+                    To make this possible, we integrate with third-party solutions and create
+                    RESTful APIs for other teams at Creditas to consume.<br />
+                    Some of the technologies used to deliver this experience are Python (+ Flask),
+                    Kotlin (+ Spring Boot) and PostgreSQL.
+                </p>
+            </span>
+            <span class="experience" id="wirecard-brasil">
+                <h2>Software Developer</h2>
+                <h3><a href="https://wirecard.com.br">Wirecard Brasil</a> - 06/2017 to 05/2019</h3>
+                <p>
+                    While working at Wirecard Brasil, I was part of the payouts team, developing
+                    and maintaining bank account transfers, and developing the bill payments
+                    system, with over R$ 1 million in paid bills in the first 3 months.<br />
+                    The technologies used to achieve these results included Java and Kotlin
+                    (+Spring), MySQL and Redis.
+                </p>
+            </span>
+            <span class="experience" id="mineplex">
+                <h2>Java Developer</h2>
+                <h3><a href="https://mineplex.com">Mineplex</a> - 04/2016 to 05/2017</h3>
+                <p>
+                    Mineplex creates proprietary third-party gaming software and server development
+                    for Minecraft. I was part of the team who helped to maintain and create in-game
+                    visual effects and utilities.<br />
+                    I was also part of the team responsible for developing a monthly subscription
+                    service that rewards subscribed players with a unique item every month.<br />
+                    To achieve this, the team used Java (+Bukkit Framework) and MySQL.
+                </p>
+            </span>
+            <span class="experience" id="hypixel">
+                <h2>Java Developer</h2>
+                <h3><a href="https://hypixel.net">Hypixel</a> - 12/2014 to 04/2015</h3>
+                <p>
+                    Hypixel is the largest Minecraft network, and the creators of the Hytale game
+                    and the Hypixel Studios, acquired by Riot Games in 2020.<br />
+                    At Hypixel, I worked in a team responsible for the development and launching
+                    of mini-games, such as UHC Champions.<br />
+                    Java (+Bukkit Framework) and MongoDB were used to develop these mini-games.
+                </p>
+            </span>
         </div>
-
-        <script src="/assets/js/menu.js" type="text/javascript" async></script>
-        <script src="/assets/js/less.min.js" type="text/javascript" async></script>
+        <div id="projects">
+            <h1>Projects</h1>
+            <span class="project" id="faker-ruby">
+                <h2><a href="https://github.com/faker-ruby/faker">Faker Ruby</a></h2>
+                <p>
+                    Faker is a Ruby library for generating fake data, such as names, addresses,
+                    and phone numbers.<br />
+                    I'm part of the core contributors team, with contributions including
+                    translations, new generators and bug fixes, as well as reviewing other's codes.
+                </p>
+            </span>
+            <span class="project" id="fuel">
+                <h2><a href="https://github.com/kittinunf/fuel">Fuel Kotlin</a></h2>
+                <p>
+                    Fuel is a Kotlin HTTP framework. It includes HTTP requests in a fluent style
+                    interface, asynchronous and blocking requests, uploading files and more.<br />
+                    My contributions include adding new methods to send objects as request
+                    bodies, and reviewing other's codes.
+                </p>
+            </span>
+        </div>
+        <div id="talks">
+            <h1>Talks</h1>
+            <span class="talk" id="feature-flags">
+                <h2><a href="https://www.slideshare.net/tdc-globalcode/tdc2018sp-trilha-ux-feature-flags-e-releases-controlados">Feature Flags and controlled releases</a></h2>
+                <p>
+                    How to be agile and implement continuous delivery with quality and security?<br />
+                    In this talk, me and Eduardo Collabardini present how to enable and disable
+                    features, products and pieces of code using feature flags. We also show the
+                    best practices and challenges we faced at Wirecard Brasil, using an
+                    open-source tool called IfMan, developed during a Hackday.<br />
+                    This talk was given at The Developers Conference - São Paulo, in July 2018.
+                </p>
+            </span>
+        </div>
+        <div id="footer">
+            <span class="sources">Font by <a href="https://www.jetbrains.com/lp/mono/">JetBrains</a>. Icons by <a href="https://lineicons.com/icons/">Line Icons</a>.</span><br />
+            <a href="https://linkedin.com/in/lucas-queiroz"><img src="assets/images/icons/linkedin.svg"  class="icon" id="linkedin" /></a>
+            <a href="https://github.com/lucasqueiroz"><img src="assets/images/icons/github.svg" class="icon" id="github" /></a>
+            <a href="https://twitter.com/lucascqueiroz97"><img src="assets/images/icons/twitter.svg" class="icon" id="twitter" /></a>
+        </div>
     </body>
 </html>
