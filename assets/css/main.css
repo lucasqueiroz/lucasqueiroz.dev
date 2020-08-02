@@ -1,13 +1,177 @@
-:root {
-    --gray-1: #F1F3F5;
-    --gray-2: #E9ECEF;
-    --gray-3: #DEE2E6;
-    --gray-4: #CED4DA;
-    --gray-5: #ADB5BD;
-    --gray-6: #868E96;
-    --gray-7: #495057;
-    --gray-8: #343A40;
-
-    --background: var(--gray-1);
-    --font-color: var(--gray-8);
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
 }
+
+body {
+    background-color: var(--background-color);
+    color: var(--font-color);
+    font-family: var(--font-family);
+    font-size: var(--paragraph-size);
+}
+
+#header {
+    width: 100%;
+    max-height: 50%;
+    background-color: var(--gray-8);
+    color: var(--gray-1);
+    text-align: center;
+}
+
+#header #logo {
+    width: 25%;
+    padding-top: 5%;
+}
+
+#header #intro {
+    padding-top: 5%;
+    padding-bottom: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+#header #social-media {
+    padding-bottom: 5%;
+}
+
+#experiences {
+    padding-top: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+#experiences h1 {
+    font-size: var(--heading-1-size);
+    padding-bottom: 1%;
+}
+
+#experiences h2 {
+    font-size: var(--heading-2-size);
+}
+
+#experiences h3 {
+    font-size: var(--heading-3-size);
+    padding-bottom: 1%;
+}
+
+#experiences h3 a {
+    color: var(--font-color);
+    text-decoration: none;
+}
+
+#experiences h3 a:hover {
+    color: var(--gray-6);
+}
+
+#experiences .experience {
+    display: block;
+    position: relative;
+    margin-bottom: 1%;
+}
+
+#projects {
+    padding-top: 2%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+#projects h1 {
+    font-size: var(--heading-1-size);
+    padding-bottom: 1%;
+}
+
+#projects h2 {
+    font-size: var(--heading-2-size);
+}
+
+#projects h2 a {
+    color: var(--font-color);
+    text-decoration: none;
+}
+
+#projects h2 a:hover {
+    color: var(--gray-6);
+}
+
+#projects .project {
+    display: block;
+    position: relative;
+    margin-bottom: 1%;
+}
+
+#talks {
+    padding-top: 2%;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding-bottom: 5%;
+}
+
+#talks h1 {
+    font-size: var(--heading-1-size);
+    padding-bottom: 1%;
+}
+
+#talks h2 {
+    font-size: var(--heading-2-size);
+}
+
+#talks h2 a {
+    color: var(--font-color);
+    text-decoration: none;
+}
+
+#talks h2 a:hover {
+    color: var(--gray-6);
+}
+
+#talks .talk {
+    display: block;
+    position: relative;
+    margin-bottom: 1%;
+}
+
+#footer {
+    background-color: var(--gray-8);
+    color: var(--gray-1);
+    text-align: center;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+#footer .sources {
+    margin-bottom: 1%;
+    display: block;
+}
+
+#footer .sources a {
+    color: var(--gray-1);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#footer .sources a:hover {
+    color: var(--gray-4);
+}
+
+@media only screen and (max-width: 900px) {
+    #header #logo {
+        width: 50%;
+    }
+
+    #experiences .experience {
+        margin-bottom: 5%;
+    }
+
+    #projects .project {
+        margin-bottom: 5%;
+    }
+
+    #talks .talk {
+        margin-bottom: 5%;
+    }
+  }

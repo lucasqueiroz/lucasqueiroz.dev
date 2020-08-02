@@ -9,34 +9,34 @@
         <title>Lucas Queiroz | Backend Developer</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="">
+        <link rel="stylesheet" href="assets/css/fonts.css">
+        <link rel="stylesheet" href="assets/css/colors.css">
+        <link rel="stylesheet" href="assets/css/main.css">
     </head>
     <body>
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-        <div class="row" id="logo">
-            <img src="assets/images/logo-light-mode.svg" id="logo-img" />
-        </div>
-        <div class="row" id="about">
-            <p>
+        <div id="header">
+            <img src="assets/images/logo.svg" id="logo" />
+            <p id="intro">
                 I'm a backend developer, with experience on building, maintaining and updating
                 RESTful APIs and integrations with third-party systems.<br />
                 The technologies I have worked with include Java, Kotlin, Ruby and Python,
                 using the frameworks Spring Boot, Rails and Flask.<br />
                 I also contribute to some open-source projects, including Faker Ruby and Fuel.
             </p>
+            <div id="social-media">
+                <a href="https://linkedin.com/in/lucas-queiroz"><img src="assets/images/icons/linkedin.svg"  class="icon" id="linkedin" /></a>
+                <a href="https://github.com/lucasqueiroz"><img src="assets/images/icons/github.svg" class="icon" id="github" /></a>
+                <a href="https://twitter.com/lucascqueiroz97"><img src="assets/images/icons/twitter.svg" class="icon" id="twitter" /></a>
+            </div>
         </div>
-        <div class="row" id="social-links">
-            <a href="https://linkedin.com/in/lucas-queiroz"><img src="assets/images/icons/linkedin.svg"  class="icon" id="linkedin" /></a>
-            <a href="https://github.com/lucasqueiroz"><img src="assets/images/icons/github.svg" class="icon" id="github" /></a>
-            <a href="https://twitter.com/lucascqueiroz97"><img src="assets/images/icons/twitter.svg" class="icon" id="twitter" /></a>
-        </div>
-        <div class="row" id="experience">
+        <div id="experiences">
             <h1>Experiences</h1>
             <span class="experience" id="creditas">
                 <h2>Software Engineer II</h2>
-                <h3>Creditas - 09/2019 to Present</h3>
+                <h3><a href="https://creditas.com.br">Creditas</a> - 09/2019 to Present</h3>
                 <p>
                     At Creditas, I'm part of the communications team, responsible to develop and
                     maintain a platform to help other teams reach our customers through phone
@@ -49,7 +49,7 @@
             </span>
             <span class="experience" id="wirecard-brasil">
                 <h2>Software Developer</h2>
-                <h3>Wirecard Brasil - 06/2017 to 05/2019</h3>
+                <h3><a href="https://wirecard.com.br">Wirecard Brasil</a> - 06/2017 to 05/2019</h3>
                 <p>
                     While working at Wirecard Brasil, I was part of the payouts team, developing
                     and maintaining bank account transfers, and developing the bill payments
@@ -60,7 +60,7 @@
             </span>
             <span class="experience" id="mineplex">
                 <h2>Java Developer</h2>
-                <h3>Mineplex - 04/2016 to 05/2017</h3>
+                <h3><a href="https://mineplex.com">Mineplex</a> - 04/2016 to 05/2017</h3>
                 <p>
                     Mineplex creates proprietary third-party gaming software and server development
                     for Minecraft. I was part of the team who helped to maintain and create in-game
@@ -72,7 +72,7 @@
             </span>
             <span class="experience" id="hypixel">
                 <h2>Java Developer</h2>
-                <h3>Hypixel - 12/2014 to 04/2015</h3>
+                <h3><a href="https://hypixel.net">Hypixel</a> - 12/2014 to 04/2015</h3>
                 <p>
                     Hypixel is the largest Minecraft network, and the creators of the Hytale game
                     and the Hypixel Studios, acquired by Riot Games in 2020.<br />
@@ -82,10 +82,10 @@
                 </p>
             </span>
         </div>
-        <div class="row" id="projects">
+        <div id="projects">
             <h1>Projects</h1>
             <span class="project" id="faker-ruby">
-                <h2>Faker Ruby</h2>
+                <h2><a href="https://github.com/faker-ruby/faker">Faker Ruby</a></h2>
                 <p>
                     Faker is a Ruby library for generating fake data, such as names, addresses,
                     and phone numbers.<br />
@@ -94,7 +94,7 @@
                 </p>
             </span>
             <span class="project" id="fuel">
-                <h2>Fuel</h2>
+                <h2><a href="https://github.com/kittinunf/fuel">Fuel Kotlin</a></h2>
                 <p>
                     Fuel is a Kotlin HTTP framework. It includes HTTP requests in a fluent style
                     interface, asynchronous and blocking requests, uploading files and more.<br />
@@ -103,10 +103,10 @@
                 </p>
             </span>
         </div>
-        <div class="row" id="talks">
+        <div id="talks">
             <h1>Talks</h1>
             <span class="talk" id="feature-flags">
-                <h2>Feature Flags and controlled releases</h2>
+                <h2><a href="https://www.slideshare.net/tdc-globalcode/tdc2018sp-trilha-ux-feature-flags-e-releases-controlados">Feature Flags and controlled releases</a></h2>
                 <p>
                     How to be agile and implement continuous delivery with quality and security?<br />
                     In this talk, me and Eduardo Collabardini present how to enable and disable
@@ -117,8 +117,8 @@
                 </p>
             </span>
         </div>
-        <div class="row" id="footer">
-            Font by <a href="https://www.jetbrains.com/lp/mono/">JetBrains</a>. Icons by <a href="https://lineicons.com/icons/">Line Icons</a>.<br />
+        <div id="footer">
+            <span class="sources">Font by <a href="https://www.jetbrains.com/lp/mono/">JetBrains</a>. Icons by <a href="https://lineicons.com/icons/">Line Icons</a>.</span><br />
             <a href="https://linkedin.com/in/lucas-queiroz"><img src="assets/images/icons/linkedin.svg"  class="icon" id="linkedin" /></a>
             <a href="https://github.com/lucasqueiroz"><img src="assets/images/icons/github.svg" class="icon" id="github" /></a>
             <a href="https://twitter.com/lucascqueiroz97"><img src="assets/images/icons/twitter.svg" class="icon" id="twitter" /></a>
