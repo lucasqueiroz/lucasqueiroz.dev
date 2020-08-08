@@ -21,6 +21,7 @@ body {
     background-color: var(--gray-8);
     color: var(--gray-1);
     text-align: center;
+    margin-bottom: 5%;
 }
 
 #header #logo {
@@ -35,101 +36,58 @@ body {
     margin-right: 5%;
 }
 
-#header #social-media {
+#header #mail {
+    padding-top: 0.5%;
     padding-bottom: 5%;
 }
 
-#experiences {
-    padding-top: 5%;
+#header #mail a {
+    text-decoration: none;
+    color: inherit;
+}
+
+#header #mail a:hover {
+    color: var(--gray-6);
+}
+
+.category {
     margin-left: 5%;
     margin-right: 5%;
 }
 
-#experiences h1 {
+.category h1 {
     font-size: var(--heading-1-size);
     padding-bottom: 1%;
 }
 
-#experiences h2 {
+.category h2 {
     font-size: var(--heading-2-size);
 }
 
-#experiences h3 {
+.category h2 a {
+    color: var(--font-color);
+    text-decoration: none;
+}
+
+.category h2 a:hover {
+    color: var(--gray-6);
+}
+
+.category h3 {
     font-size: var(--heading-3-size);
     padding-bottom: 1%;
 }
 
-#experiences h3 a {
+.category h3 a {
     color: var(--font-color);
     text-decoration: none;
 }
 
-#experiences h3 a:hover {
+.category h3 a:hover {
     color: var(--gray-6);
 }
 
-#experiences .experience {
-    display: block;
-    position: relative;
-    margin-bottom: 1%;
-}
-
-#projects {
-    padding-top: 2%;
-    margin-left: 5%;
-    margin-right: 5%;
-}
-
-#projects h1 {
-    font-size: var(--heading-1-size);
-    padding-bottom: 1%;
-}
-
-#projects h2 {
-    font-size: var(--heading-2-size);
-}
-
-#projects h2 a {
-    color: var(--font-color);
-    text-decoration: none;
-}
-
-#projects h2 a:hover {
-    color: var(--gray-6);
-}
-
-#projects .project {
-    display: block;
-    position: relative;
-    margin-bottom: 1%;
-}
-
-#talks {
-    padding-top: 2%;
-    margin-left: 5%;
-    margin-right: 5%;
-    padding-bottom: 5%;
-}
-
-#talks h1 {
-    font-size: var(--heading-1-size);
-    padding-bottom: 1%;
-}
-
-#talks h2 {
-    font-size: var(--heading-2-size);
-}
-
-#talks h2 a {
-    color: var(--font-color);
-    text-decoration: none;
-}
-
-#talks h2 a:hover {
-    color: var(--gray-6);
-}
-
-#talks .talk {
+.category .item {
     display: block;
     position: relative;
     margin-bottom: 1%;
@@ -141,6 +99,7 @@ body {
     text-align: center;
     padding-top: 5%;
     padding-bottom: 5%;
+    margin-top: 5%;
 }
 
 #footer .sources {
@@ -163,15 +122,7 @@ body {
         width: 50%;
     }
 
-    #experiences .experience {
-        margin-bottom: 5%;
-    }
-
-    #projects .project {
-        margin-bottom: 5%;
-    }
-
-    #talks .talk {
+    .category .item {
         margin-bottom: 5%;
     }
   }
