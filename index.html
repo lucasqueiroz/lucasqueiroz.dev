@@ -18,11 +18,11 @@
     </head>
     <body>
         <!--[if lt IE 7]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <span>upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
         <header class="navbar navbar-expand-md navbar-light bg-light">
             <nav class="container-xxl flex-wrap flex-md-nowrap">
-                <a href="https://lucasqueiroz.dev" class="navbar-brand"><img src="assets/images/logo.svg" /></a>
+                <a href="https://lucasqueiroz.dev" class="navbar-brand" aria-label="Home"><img src="assets/images/logo.svg" alt="Logo - LQ" /></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -59,7 +59,7 @@
         <div class="container bg-white py-5">
             <div class="row py-5">
                 <div class="col-md-4 d-flex justify-content-center">
-                    <img src="assets/images/avatar.png" id="avatar" alt="Lucas Queiroz" height="200px" />
+                    <img src="assets/images/avatar.jpg" id="avatar" alt="Lucas Queiroz" height="200px" />
                 </div>
                 <div class="col-md-8">
                     <div class="card-body">
@@ -94,9 +94,9 @@
                     <div class="col-md-4">
                         <h5 class="card-text text-muted">Technologies</h5>
                         <div class="list-group">
-                            <a class="list-group-item list-group-item-action">Python</a>
-                            <a class="list-group-item list-group-item-action">Django</a>
-                            <a class="list-group-item list-group-item-action">MySQL</a>
+                            <span class="list-group-item list-group-item-action">Python</span>
+                            <span class="list-group-item list-group-item-action">Django</span>
+                            <span class="list-group-item list-group-item-action">MySQL</span>
                         </div>
                     </div>
                 </div>
@@ -120,11 +120,11 @@
                     <div class="col-md-4">
                         <h5 class="card-text text-muted">Technologies</h5>
                         <div class="list-group">
-                            <a class="list-group-item list-group-item-action">Python</a>
-                            <a class="list-group-item list-group-item-action">Flask</a>
-                            <a class="list-group-item list-group-item-action">Kotlin</a>
-                            <a class="list-group-item list-group-item-action">Spring Boot</a>
-                            <a class="list-group-item list-group-item-action">PostgreSQL</a>
+                            <span class="list-group-item list-group-item-action">Python</span>
+                            <span class="list-group-item list-group-item-action">Flask</span>
+                            <span class="list-group-item list-group-item-action">Kotlin</span>
+                            <span class="list-group-item list-group-item-action">Spring Boot</span>
+                            <span class="list-group-item list-group-item-action">PostgreSQL</span>
                         </div>
                     </div>
                 </div>
@@ -147,12 +147,12 @@
                     <div class="col-md-4">
                         <h5 class="card-text text-muted">Technologies</h5>
                         <div class="list-group">
-                            <a class="list-group-item list-group-item-action">Java</a>
-                            <a class="list-group-item list-group-item-action">Kotlin</a>
-                            <a class="list-group-item list-group-item-action">Spring Boot</a>
-                            <a class="list-group-item list-group-item-action">Ruby</a>
-                            <a class="list-group-item list-group-item-action">Rails</a>
-                            <a class="list-group-item list-group-item-action">MySQL</a>
+                            <span class="list-group-item list-group-item-action">Java</span>
+                            <span class="list-group-item list-group-item-action">Kotlin</span>
+                            <span class="list-group-item list-group-item-action">Spring Boot</span>
+                            <span class="list-group-item list-group-item-action">Ruby</span>
+                            <span class="list-group-item list-group-item-action">Rails</span>
+                            <span class="list-group-item list-group-item-action">MySQL</span>
                         </div>
                     </div>
                 </div>
@@ -183,12 +183,12 @@
                     <div class="col-md-4">
                         <h5 class="card-text text-muted">Technologies</h5>
                         <div class="list-group">
-                            <a class="list-group-item list-group-item-action">Java</a>
-                            <a class="list-group-item list-group-item-action">Spring Boot</a>
-                            <a class="list-group-item list-group-item-action">Ruby</a>
-                            <a class="list-group-item list-group-item-action">Rails</a>
-                            <a class="list-group-item list-group-item-action">Heroku</a>
-                            <a class="list-group-item list-group-item-action">MySQL</a>
+                            <span class="list-group-item list-group-item-action">Java</span>
+                            <span class="list-group-item list-group-item-action">Spring Boot</span>
+                            <span class="list-group-item list-group-item-action">Ruby</span>
+                            <span class="list-group-item list-group-item-action">Rails</span>
+                            <span class="list-group-item list-group-item-action">Heroku</span>
+                            <span class="list-group-item list-group-item-action">MySQL</span>
                         </div>
                     </div>
                 </div>
@@ -203,6 +203,7 @@
                 <div class="row py-3 px-5">
                     <div class="col-md-auto">
                         <h4 class="card-title">Using Fuel for HTTP Requests</h4>
+                        <h5 class="card-text text-muted">Creditas Webinar</h5>
                         <h6 class="card-text text-muted">November 2020</h6>
                     </div>
                 </div>
@@ -234,6 +235,6 @@
                 </div>
             </div>
         </div>
-        <script src="assets/js/bootstrap.bundle.min.js"></script>
+        <script src="assets/js/bootstrap.bundle.min.js" async></script>
     </body>
 </html>
