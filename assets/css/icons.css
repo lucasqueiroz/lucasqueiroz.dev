@@ -1,0 +1,24 @@
+i {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-size: cover;
+    filter: var(--icon-color);
+}
+
+i:hover,
+i:focus {
+    filter: var(--icon-color-hover);
+}
+
+.linkedin {
+    background: url(../images/linkedin.svg);
+}
+
+.github {
+    background: url(../images/github.svg);
+}
+
+.twitter {
+    background: url(../images/twitter.svg);
+}
