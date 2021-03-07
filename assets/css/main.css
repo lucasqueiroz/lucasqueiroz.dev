@@ -21,11 +21,11 @@
 
     --background-color: var(--nord5);
     --font-color: var(--nord0);
-    --a-color: var(--nord1);
+    --a-color: var(--nord9);
     --a-color-hover: var(--nord10);
 
-    --icon-color: invert(54%) sepia(21%) saturate(873%) hue-rotate(173deg) brightness(86%) contrast(84%);
-    --icon-color-hover: invert(71%) sepia(7%) saturate(1433%) hue-rotate(169deg) brightness(86%) contrast(92%);
+    --icon-color: invert(71%) sepia(7%) saturate(1433%) hue-rotate(169deg) brightness(86%) contrast(92%);
+    --icon-color-hover: invert(54%) sepia(21%) saturate(873%) hue-rotate(173deg) brightness(86%) contrast(84%);
 
     --font-family: "JetBrains Mono";
     --paragraph-size: 18px;
@@ -51,6 +51,10 @@ a {
 
 a:hover,
 a:focus {
+    color: var(--a-color-hover) !important;
+}
+
+.active {
     color: var(--a-color-hover) !important;
 }
 
