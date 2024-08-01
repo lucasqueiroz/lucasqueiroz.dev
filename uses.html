@@ -8,149 +8,124 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Lucas Queiroz | Backend Developer</title>
-  <meta name="description" content="I'm a backend developer, with experience on building, maintaining and updating
-        RESTful APIs and integrations with third-party systems.">
+  <title>Lucas Queiroz | /uses</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
   <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
-  <link rel="stylesheet" href="assets/css/fonts.css" />
-  <link rel="stylesheet" href="assets/css/main.css" />
-  <link rel="stylesheet" href="assets/css/icons.css" />
-  <link rel="icon" type="image/favicon" href="assets/images/favicon.png" />
+  <link rel="icon" type="image/png" href="assets/images/avatar.png" />
 </head>
 
 <body>
-  <header class="p-3 bg-dark text-white">
-    <div class="container">
-      <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
-        <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
-          <li>
-            <a href="index.html" class="nav-link px-2 text-white">Home</a>
-          </li>
-          <li>
-            <a href="uses.html" class="nav-link px-2 text-secondary">/uses</a>
-          </li>
-        </ul>
-        <div class="text-end">
-          <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
-            <li>
-              <a href="https://linkedin.com/in/lucas-queiroz" class="nav-link px-2 text-white">LinkedIn</a>
-            </li>
-            <li>
-              <a href="https://github.com/lucasqueiroz" class="nav-link px-2 text-white">GitHub</a>
-            </li>
-            <li>
-              <a href="https://twitter.com/lucascqueiroz97" class="nav-link px-2 text-white">Twitter</a>
-            </li>
+  <header>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">Lucas Queiroz</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarItems"
+          aria-controls="navbarItems" aria-expanded="false" aria-lable="Toggle menu">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarItems">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+            <li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>
+            <li class="nav-item"><a href="uses.html" class="nav-link active">/uses</a></li>
+          </ul>
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item"><a href="https://linkedin.com/in/lucas-queiroz" class="nav-link">LinkedIn</a></li>
+            <li class="nav-item"><a href="https://github.com/lucasqueiroz" class="nav-link">GitHub</a></li>
           </ul>
         </div>
       </div>
-    </div>
+    </nav>
   </header>
-
-  <div class="container bg-white py-5">
-    <div class="row py-5 px-5">
-      <div class="col-md-auto">
-        <h3 class="card-title">/uses</h3>
-      </div>
-    </div>
-    <div class="content-card">
-      <div class="row py-3 px-5">
-        <div class="col-md-12">
+  <main>
+    <div class="container">
+      <div class="row mt-5 justify-content-center align-items-center" id="about">
+        <div class="col-8 text-center">
+          <h1>/uses</h1>
           <p>
-            Inspired by <a href="https://wesbos.com/" aria-label="Wes Bos'">Wes Bos'</a> list of software and hardware
-            they use, here is my own list.
-            <br />You can check other people's lists at <a href="https://uses.tech"
-              aria-label="Uses.tech">uses.tech</a>.
+            Inspired by Wes Bos' list of software and hardware they use, here is my own list.
+            You can check other people's lists at uses.tech.
+            The main theme I use is Catppuccin Frappé. If you want to copy my settings, here is
+            my <a href="https://github.com/lucasqueiroz/.dotfiles">.dotfiles</a>.
           </p>
         </div>
       </div>
+
+      <div class="row mt-3 justify-content-center" id="software">
+        <div class="col-lg-6 col-12">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Software</h5>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">
+                Chrome
+                <ul class="list-group list-group-flush nested-list">
+                  <li class="list-group-item">1Password</li>
+                  <li class="list-group-item">Raindrop.io</li>
+                  <li class="list-group-item">Daily.dev</li>
+                </ul>
+              </li>
+              <li class="list-group-item">1Password</li>
+              <li class="list-group-item">Spotify</li>
+              <li class="list-group-item">Notion</li>
+              <li class="list-group-item">Raycast</li>
+              <li class="list-group-item">TickTick</li>
+              <li class="list-group-item">Inoreader</li>
+              <li class="list-group-item">Contexts</li>
+              <li class="list-group-item">PyCharm</li>
+              <li class="list-group-item">VSCode</li>
+              <li class="list-group-item">Ulauncher on Ubuntu</li>
+              <li class="list-group-item">
+                Wezterm - Terminal
+                <ul class="list-group list-group-flush nested-list">
+                  <li class="list-group-item">Catppuccin Frappé</li>
+                  <li class="list-group-item">ZSH</li>
+                  <li class="list-group-item">Oh-my-zsh</li>
+                  <li class="list-group-item">Oh-my-posh</li>
+                  <li class="list-group-item">FZF</li>
+                  <li class="list-group-item">Stow</li>
+                  <li class="list-group-item">Brew / Linux Brew</li>
+                  <li class="list-group-item">Nvim</li>
+                  <li class="list-group-item">Bottom</li>
+                  <li class="list-group-item">Ranger</li>
+                  <li class="list-group-item">Glow</li>
+                  <li class="list-group-item">Lazygit</li>
+                  <li class="list-group-item">EZA</li>
+                  <li class="list-group-item">Posting</li>
+                  <li class="list-group-item">ASDF</li>
+                  <li class="list-group-item">Nix</li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-6 col-12">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Hardware</h5>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Dell P2723QE 27’ - Monitor</li>
+              <li class="list-group-item">Logitech MX Keys Mini - Keyboard</li>
+              <li class="list-group-item">Logitech G502 - Mouse</li>
+              <li class="list-group-item">Logitech G920s Pro - Webcam</li>
+              <li class="list-group-item">Blue Yeti Nano - Microphone</li>
+              <li class="list-group-item">Bose 700 - Headphones</li>
+              <li class="list-group-item">Galaxy Buds2 Pro - Earbuds</li>
+              <li class="list-group-item">MacBook Pro M1 2021 - Work laptop</li>
+              <li class="list-group-item">Samsung Galaxy S23 Ultra - Personal phone</li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </div>
+  </main>
+  <footer style="height: 10vh;">
 
-    <div class="content-card">
-
-      <div class="row py-3 px-5">
-        <div class="col-md-auto">
-          <h4 class="card-title">Personal</h4>
-        </div>
-      </div>
-      <div class="row py-3 px-5" id="personal">
-
-        <div class="col-md-6">
-          <h5 class="card-text text-muted">Software</h5>
-          <ul class="list-group list-group-flush">
-            <li class="list-group-item">Windows 11</li>
-            <li class="list-group-item">Chrome</li>
-            <li class="list-group-item">Google Drive</li>
-            <li class="list-group-item">VS Code</li>
-            <li class="list-group-item">1Password</li>
-            <li class="list-group-item">Spotify</li>
-            <li class="list-group-item">Notion</li>
-            <li class="list-group-item">TickTick</li>
-            <li class="list-group-item">Raindrop.io</li>
-            <li class="list-group-item">Daily.dev</li>
-            <li class="list-group-item">Inoreader</li>
-            <li class="list-group-item">DevDocs</li>
-          </ul>
-        </div>
-
-        <div class="col-md-6">
-          <h5 class="card-text text-muted">Hardware</h5>
-          <ul class="list-group list-group-flush">
-            <li class="list-group-item">Logitech MX Keys Mini</li>
-            <li class="list-group-item">Logitech G502</li>
-            <li class="list-group-item">Logitech G920s Pro</li>
-            <li class="list-group-item">Blue Yeti Nano</li>
-            <li class="list-group-item">Bose 700</li>
-            <li class="list-group-item">Dell P2723QE 27'</li>
-            <li class="list-group-item">Samsung Galaxy S23 Ultra</li>
-            <li class="list-group-item">Samsung Galaxy Buds2 Pro</li>
-            <li class="list-group-item">Samsung Galaxy Watch 3</li>
-          </ul>
-        </div>
-      </div>
-
-    </div>
-
-    <div class="content-card">
-
-      <div class="row py-3 px-5">
-        <div class="col-md-auto">
-          <h4 class="card-title">Work</h4>
-        </div>
-      </div>
-      <div class="row py-3 px-5" id="work">
-
-        <div class="col-md-6">
-          <h5 class="card-text text-muted">Software</h5>
-          <ul class="list-group list-group-flush">
-            <li class="list-group-item">Contexts</li>
-            <li class="list-group-item">Chrome</li>
-            <li class="list-group-item">Raycast</li>
-            <li class="list-group-item">PyCharm</li>
-            <li class="list-group-item">1Password</li>
-            <li class="list-group-item">Oh-my-zsh</li>
-            <li class="list-group-item">Homebrew</li>
-            <li class="list-group-item">Colorls</li>
-            <li class="list-group-item">Starship</li>
-          </ul>
-        </div>
-
-        <div class="col-md-6">
-          <h5 class="card-text text-muted">Hardware</h5>
-          <ul class="list-group list-group-flush">
-            <li class="list-group-item">MacBook Pro M1 2021</li>
-            <li class="list-group-item">Logitech G502</li>
-            <li class="list-group-item">Logitech G920s Pro</li>
-            <li class="list-group-item">Blue Yeti Nano</li>
-            <li class="list-group-item">Bose 700</li>
-            <li class="list-group-item">Dell P2723QE 27'</li>
-          </ul>
-        </div>
-      </div>
-
-    </div>
-    <script src="assets/js/bootstrap.bundle.min.js" async></script>
+  </footer>
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
