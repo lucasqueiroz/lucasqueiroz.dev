@@ -1,0 +1,17 @@
+/*!
+Font: The Atkinson Hyperlegible Mono
+License: SIL Open Font License, Version 1.1
+Source: https://fonts.google.com/specimen/Atkinson+Hyperlegible+Mono/license
+*/
+@font-face {
+  font-family: "Atkinson Hyperlegible Mono";
+  src: url("../fonts/Atkinson_Hyperlegible_Mono/AtkinsonHyperlegibleMono-VariableFont_wght.ttf")
+    format("truetype");
+}
+
+@font-face {
+  font-family: "Atkinson Hyperlegible Mono";
+  src: url("../fonts/Atkinson_Hyperlegible_Mono/AtkinsonHyperlegibleMono-Italic-VariableFont_wght.ttf")
+    format("truetype");
+  font-style: italic;
+}

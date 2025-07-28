@@ -1,131 +1,43 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html lass="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!-->
-<html lang="en"> <!--<![endif]-->
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>uses - Lucas Queiroz</title>
 
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Lucas Queiroz | /uses</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-  <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
-  <link rel="icon" type="image/png" href="assets/images/avatar.png" />
-</head>
-
-<body>
-  <header>
-    <nav class="navbar navbar-expand-lg">
-      <div class="container">
-        <a class="navbar-brand" href="index.html">Lucas Queiroz</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarItems"
-          aria-controls="navbarItems" aria-expanded="false" aria-lable="Toggle menu">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarItems">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
-            <li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>
-            <li class="nav-item"><a href="uses.html" class="nav-link active">/uses</a></li>
-          </ul>
-          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-            <li class="nav-item"><a href="https://linkedin.com/in/lucas-queiroz" class="nav-link">LinkedIn</a></li>
-            <li class="nav-item"><a href="https://github.com/lucasqueiroz" class="nav-link">GitHub</a></li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-  </header>
-  <main>
+    <link rel="stylesheet" href="assets/css/fonts.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon" />
+  </head>
+  <body>
     <div class="container">
-      <div class="row mt-5 justify-content-center align-items-center" id="about">
-        <div class="col-8 text-center">
-          <h1>/uses</h1>
+      <header>
+        <div class="logo">
+          <img
+            src="assets/images/Safe Profile - Catppuccin Mocha - Small.png"
+            alt="Lucas Queiroz Profile Picture"
+            class="profile-img"
+          />
+          <h1>Lucas Queiroz</h1>
+        </div>
+        <nav>
+          <a href="index.html">home</a>
+          <a href="work.html">work</a>
+          <a href="uses.html" class="active">uses</a>
+        </nav>
+      </header>
+      <main>
+        <section id="uses">
+          <h2>/uses</h2>
           <p>
-            Inspired by Wes Bos' list of software and hardware they use, here is my own list.
-            You can check other people's lists at uses.tech.
-            The main theme I use is Catppuccin Frappé. If you want to copy my settings, here is
-            my <a href="https://github.com/lucasqueiroz/.dotfiles">.dotfiles</a>.
+            This is an extensive, non-complete, ever-growing list of software
+            and services that I use. This is not a recommendation, although I
+            could recommend most of the software and services I use.
           </p>
-        </div>
-      </div>
-
-      <div class="row mt-3 justify-content-center" id="software">
-        <div class="col-lg-6 col-12">
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">Software</h5>
-            </div>
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item">
-                Chrome
-                <ul class="list-group list-group-flush nested-list">
-                  <li class="list-group-item">1Password</li>
-                  <li class="list-group-item">Raindrop.io</li>
-                  <li class="list-group-item">Daily.dev</li>
-                </ul>
-              </li>
-              <li class="list-group-item">1Password</li>
-              <li class="list-group-item">Spotify</li>
-              <li class="list-group-item">Notion</li>
-              <li class="list-group-item">Raycast</li>
-              <li class="list-group-item">TickTick</li>
-              <li class="list-group-item">Inoreader</li>
-              <li class="list-group-item">Contexts</li>
-              <li class="list-group-item">PyCharm</li>
-              <li class="list-group-item">VSCode</li>
-              <li class="list-group-item">Ulauncher on Ubuntu</li>
-              <li class="list-group-item">
-                Wezterm - Terminal
-                <ul class="list-group list-group-flush nested-list">
-                  <li class="list-group-item">Catppuccin Frappé</li>
-                  <li class="list-group-item">ZSH</li>
-                  <li class="list-group-item">Oh-my-zsh</li>
-                  <li class="list-group-item">Oh-my-posh</li>
-                  <li class="list-group-item">FZF</li>
-                  <li class="list-group-item">Stow</li>
-                  <li class="list-group-item">Brew / Linux Brew</li>
-                  <li class="list-group-item">Nvim</li>
-                  <li class="list-group-item">Bottom</li>
-                  <li class="list-group-item">Ranger</li>
-                  <li class="list-group-item">Glow</li>
-                  <li class="list-group-item">Lazygit</li>
-                  <li class="list-group-item">EZA</li>
-                  <li class="list-group-item">Posting</li>
-                  <li class="list-group-item">ASDF</li>
-                  <li class="list-group-item">Nix</li>
-                </ul>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="col-lg-6 col-12">
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">Hardware</h5>
-            </div>
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item">Dell P2723QE 27’ - Monitor</li>
-              <li class="list-group-item">Logitech MX Keys Mini - Keyboard</li>
-              <li class="list-group-item">Logitech G502 - Mouse</li>
-              <li class="list-group-item">Logitech G920s Pro - Webcam</li>
-              <li class="list-group-item">Blue Yeti Nano - Microphone</li>
-              <li class="list-group-item">Bose 700 - Headphones</li>
-              <li class="list-group-item">Galaxy Buds2 Pro - Earbuds</li>
-              <li class="list-group-item">MacBook Pro M1 2021 - Work laptop</li>
-              <li class="list-group-item">Samsung Galaxy S23 Ultra - Personal phone</li>
-            </ul>
-          </div>
-        </div>
-      </div>
+          <p>This page is under construction. Come back soon to view more.</p>
+        </section>
+      </main>
     </div>
-  </main>
-  <footer style="height: 10vh;">
-
-  </footer>
-  <script src="assets/js/bootstrap.bundle.min.js"></script>
-</body>
-
+  </body>
 </html>
